@@ -82,8 +82,7 @@
                         <i class="fa-solid fa-envelope"><p>Mail</p></i>
                     </div>
                 </div>
-                <p style="color: red; margin:10px;">Vui lòng thêm chú thích nếu khách hàng có thêm yêu cầu!</p>
-                <textarea style="padding: 5px;" placeholder="Nhập chú thích." require name="product_desc" cols="30" rows="10"></textarea>
+                <p style="color: red; margin:10px;">Vui lòng liên hệ nếu khách hàng có thắc mắc!</p>
                 <div class="product-content-right-bottom">
                     <div class="product-content-right-bottom-top">
                         &#8744;
