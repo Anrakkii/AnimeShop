@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/00e90bdb6c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Product</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="assets/images/logo.jpg"></a>
+        </div>
+        <div class="menu">
+            <li><a href="">ĐẶT TRƯỚC</a></li>
+            <li><a href="">FIGURE</a></li>
+            <li><a href="">XẢ HÀNG</a></li>
+            <li><a href="">WALL SCROLLS</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới</a>
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Bán chạy</a>
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cổ điển</a>
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">PLUSH</a></li>
+            <li><a href="">ÁO PHÔNG</a></li>
+            <li><a href="">SỰ KIỆN</a></li>
+            <a href="#" id="icon" class="icon" onclick="openSlideMenu()">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </a>
+        </div>
+
+        <div class="others">
+            <li class="search-box">
+                <input class="search-txt" placeholder="Tìm kiếm" type="text">
+                <a class="btn" href="">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-headphones fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-user fa-lg" href=""></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-bag-shopping fa-lg" href=""></i>
+                </a>
+            </li>
+        </div>
+    </header>
+    <div id="side-menu" class="side-nav">
+        <a href="" class="close" onclick="closeSlideMenu()">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </a>
+        <input class="search-side" placeholder="Tìm kiếm" type="text">
+        <a class="btn" href="">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </a>
+        <a href="pre_order.php">ĐẶT TRƯỚC</a>
+        <a href="">FIGURE</a>
+        <a href="">XẢ HÀNG</a>
+        <a href="">WALLSCROLL</a>
+        <a href="">PLUSH</a>
+        <a href="">ÁO PHÔNG</a>
+        <a href="">SỰ KIỆN</a>
+    </div>
+    <!---------------------------Product------------------------------------->
+    <section class="product container">
+            <div class= "product-top row">
+                <p>Trang chủ</p> <span>&#10230; </span> <p>Nữ</p> <span>&#10230;</span> <p>Hàng nữ mới về</p><span>&#10230;</span><p>Áo thun cổ tròn</p>
+            </div>
+        <div class="product-content row">
+            <div class="product-content-left row">
+                <div class="product-content-left-big-img">
+                    <img src="/assets/images/slide2.webp">
+                </div>
+                <div class="product-content-left-small-img">
+                    <img src="/assets/images/slide1.jpg">
+                    <img src="/assets/images/slide2.webp">
+                    <img src="/assets/images/slide3.webp">
+                    <img src="/assets/images/slide4.webp">
+                </div>
+            </div>
+            <div class="product-content-right">
+                <div class="product-content-right-product-name">
+                    <h1>ÁO THUN CỔ TRÒN</h1>
+                    <p>MSP: 0000001</p>
+                </div>
+                <div class="product-content-right-product-price">
+                    <p>1.500.000<sup>đ</sup></p>
+                </div>
+                <div class="product-content-right-product-color">
+                    <p><span>Màu sắc</span>: Xanh cổ vịt nhạt<span style="color: red;">*</span></p>
+                    <div class="product-content-right-product-color-img">
+                        <img src="/assets/images/spcolor.png" alt="">
+                    </div>
+                </div>
+                <div class="product-content-right-product-size">
+                    <p style="font-weight: bold;">Size:</p>
+                    <div class="size">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <span>XXL</span>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <p style="font-weight: bold;">Số lượng:</p>
+                    <input type="number" min="0" value="1">
+                </div>
+                <p stype="color: red;">Vui lòng chọn size</p>
+                <div class="product-content-right-product-button">
+                    <button><i class="fa-solid fa-cart-shopping"></i> <p>MUA HÀNG</p></button>
+                    <button><p>TÌM TẠI CỬA HÀNG</p></button>
+                </div>
+                <div class="product-content-right-product-icon">
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fa-solid fa-phone"><p>Hotline</p></i>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fa-solid fa-comment"><p>Chat</p></i>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fa-solid fa-envelope"><p>Mail</p></i>
+                    </div>
+                </div>
+                <div class="product-content-right-product-QR">
+                    <img src="/assets/images/QR_code.webp" alt="">
+                </div>
+                <div class="product-content-right-bottom">
+                    <div class="product-content-right-bottom-top">
+                        &#8744;
+                    </div>
+                    <div class="product-content-right-bottom-content-big">
+                        <div class="product-content-right-bottom-content-title row">
+                            <div class="product-content-right-bottom-content-title-item detail">
+                                <p>Chi tiết</p>
+                            </div>
+                            <div class="product-content-right-bottom-content-title-item preserve">
+                                <p>Bảo quản</p>
+                            </div>
+                            <div class="product-content-right-bottom-content-title-item">
+                                <p>Tham khảo size</p>
+                            </div>
+                        </div>
+                        <div class="product-content-right-bottom-content">
+                            <div class="product-content-right-bottom-content-detail">
+                                From "Chainsaw Man" comes a bunny figure of Power!
+
+From "Chainsaw Man" comes a bunny style figure of the Blood Fiend, Power! Take note of Power's unique facial expression and bold yet delicate hairstyle. Power's long legs that stretch from her red bunny suit are covered in real net tights, providing a realistic look and feel. This bunny figure is an impressive 1/4 scale item. Be sure to add her to your collection along with Makima: Bunny Ver., set to be made available for preorder soon! <br><br>
+
+                            </div>
+                            <div class="product-content-right-bottom-content-preserve">
+                                Manufacturer: FREEing
+Specifications: Painted plastic 1/4 scale complete product with stand included. Approximately 505mm (19.88in) in height.
+U.S. Release Date: Dec-2023
+Pre-Order-Due-Date: 2023-03-06
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--product-related-->
+    <section class="product-related container">
+        <div class="product-related-title">
+            <p>SẢN PHẨM LIÊN QUAN</p>
+        </div>
+        <div class="product-content row">
+            <div class="product-related-item">
+                <div class="product-related-item-block-img">
+                    <img src="/assets/images/slide1.jpg" alt="">
+                </div>
+                <h1>ÁO THUN CỔ TRÒN</h1>
+                <i>1.500.000<sup>đ</sup></i><p>1.200.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <div class="product-related-item-block-img">
+                    <img src="/assets/images/slide2.webp" alt="">
+                </div>
+                <h1>ÁO THUN CỔ TRÒN</h1>
+                <i>1.500.000<sup>đ</sup></i><p>1.200.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <div class="product-related-item-block-img">
+                    <img src="/assets/images/slide3.webp" alt="">
+                </div>
+                <h1>ÁO THUN CỔ TRÒN</h1>
+                <i>1.500.000<sup>đ</sup></i><p>1.200.000<sup>đ</sup></p>
+            </div>
+            <div class="product-related-item">
+                <div class="product-related-item-block-img">
+                    <img src="/assets/images/slide4.webp" alt="">
+                </div>
+                <h1>ÁO THUN CỔ TRÒN</h1>
+                <i>1.500.000<sup>đ</sup></i><p>1.200.000<sup>đ</sup></p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----------------------------app-container------------------------------->
+    <section class="app-container">
+        <p>Tải ứng dụng AnimeShop</p>
+        <div class="app-google">
+            <a href=""><img src="/assets/images/Download_on_the_App_Store.webp"></a>
+            <a href=""><img src="/assets/images/Download_on_GG.png"></a>
+        </div>
+        <p>Nhận tin tức AnimeShop</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+    <!-----------------------------footer------------------------------->
+    <footer>
+        <div class="footer-top">
+            <li><a href=""><img src="/assets/images/bocongthuong.png" alt = ""></a></li>
+            <li><a href=""></a>Liên hệ</li>
+            <li><a href=""></a>Tuyển dụng</li>
+            <li><a href=""></a>Giới thiệu</li>
+            <li>
+                <a href="" class="fa-brands fa-facebook"></a>
+                <a href="" class="fa-brands fa-twitter"></a>
+                <a href="" class="fa-brands fa-youtube"></a>
+            </li>
+        </div>
+        <p>
+            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
+            Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam <br>
+            Số điện thoại: <b>0243 205 2222</b> <br>
+        </p>
+    </footer>
+    <div class="footer-bottom">
+        © 2022 BEST ANIME SHOP. ALL RIGHTS RESERVED.
+    </div>
+
+</body>
+<script src="style.js"></script>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/00e90bdb6c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="assets/images/logo.jpg"></a>
+        </div>
+        <div class="menu">
+            <li><a href="">ĐẶT TRƯỚC</a></li>
+            <li><a href="">FIGURE</a></li>
+            <li><a href="">XẢ HÀNG</a></li>
+            <li><a href="">WALL SCROLLS</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới</a>
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Bán chạy</a>
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Cổ điển</a>
+                        <ul>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                            <li><a href="">Test</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="">PLUSH</a></li>
+            <li><a href="">ÁO PHÔNG</a></li>
+            <li><a href="">SỰ KIỆN</a></li>
+            <a href="#" id="icon" class="icon" onclick="openSlideMenu()">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </a>
+        </div>
+
+        <div class="others">
+            <li class="search-box">
+                <input class="search-txt" placeholder="Tìm kiếm" type="text">
+                <a class="btn" href="">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-headphones fa-lg"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-user fa-lg" href=""></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-bag-shopping fa-lg" href=""></i>
+                </a>
+            </li>
+        </div>
+    </header>
+    <div id="side-menu" class="side-nav">
+        <a href="" class="close" onclick="closeSlideMenu()">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </a>
+        <input class="search-side" placeholder="Tìm kiếm" type="text">
+        <a class="btn" href="">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+        </a>
+        <a href="pre_order.php">ĐẶT TRƯỚC</a>
+        <a href="">FIGURE</a>
+        <a href="">XẢ HÀNG</a>
+        <a href="">WALLSCROLL</a>
+        <a href="">PLUSH</a>
+        <a href="">ÁO PHÔNG</a>
+        <a href="">SỰ KIỆN</a>
+    </div>
+    <!-----------------------------slider------------------------------->
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="https://edunewsnetwork.files.wordpress.com/2021/07/images-89.jpeg">
+            <img src="/assets/images/slide2.webp">
+            <img src="/assets/images/slide3.webp">
+            <img src="/assets/images/slide4.webp">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+    <!-----------------------------app-container------------------------------->
+    <section class="app-container">
+        <p>Tải ứng dụng AnimeShop</p>
+        <div class="app-google">
+            <a href=""><img src="/assets/images/Download_on_the_App_Store.webp"></a>
+            <a href=""><img src="/assets/images/Download_on_GG.png"></a>
+        </div>
+        <p>Nhận tin tức AnimeShop</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+    <!-----------------------------footer------------------------------->
+    <footer>
+        <div class="footer-top">
+            <li><a href=""><img src="/assets/images/bocongthuong.png" alt = ""></a></li>
+            <li><a href=""></a>Liên hệ</li>
+            <li><a href=""></a>Tuyển dụng</li>
+            <li><a href=""></a>Giới thiệu</li>
+            <li>
+                <a href="" class="fa-brands fa-facebook"></a>
+                <a href="" class="fa-brands fa-twitter"></a>
+                <a href="" class="fa-brands fa-youtube"></a>
+            </li>
+        </div>
+        <p>
+            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 <br>
+            Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam <br>
+            Số điện thoại: <b>0243 205 2222</b> <br>
+        </p>
+    </footer>
+    <div class="footer-bottom">
+        © 2022 BEST ANIME SHOP. ALL RIGHTS RESERVED.
+    </div>
+
+</body>
+<script src="style.js"></script>
+</html>
