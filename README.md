@@ -1,1 +1,1 @@
-this is AnimeShop
+this is AnimeShop project
