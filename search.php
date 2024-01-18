@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    $con = mysqli_connect("localhost","root","","demouser_animeshop");
+    $con = mysqli_connect("localhost","demouser_animeshop","animeshop", "demouser_animeshop");
 ?>
 <?php
     $sql_product = "SELECT * FROM tbl_product_img_desc 

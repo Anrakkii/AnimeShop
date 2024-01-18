@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    $con = mysqli_connect("localhost","root","","demouser_animeshop");
+    $con = mysqli_connect("localhost","demouser_animeshop","animeshop", "demouser_animeshop");
 ?>
 <?php
 if(isset($_POST['pay'])){
