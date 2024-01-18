@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    include("../admin/class/product-class.php");
+    include("./admin/class/product-class.php");
 ?>
 
 <?php
@@ -25,7 +25,7 @@
                 foreach($get_img_desc as $get_result) {
                     if($product_id == $get_result['product_id'] and $i < 1){$i++;
             ?>
-                        <img src="../admin/uploads/images_desc/<?php echo $get_result['product_img_desc'] ?>">
+                        <img src="./admin/uploads/images_desc/<?php echo $get_result['product_img_desc'] ?>">
             <?php
                     }
                 }
@@ -39,7 +39,7 @@
                 foreach($get_img_desc as $get_result) {
                     if($product_id == $get_result['product_id']){
             ?>
-                        <img src="../admin/uploads/images_desc/<?php echo $get_result['product_img_desc'] ?>">
+                        <img src="./admin/uploads/images_desc/<?php echo $get_result['product_img_desc'] ?>">
             <?php
                     }
                 }
@@ -131,7 +131,7 @@
             ?>
                 <div class="product-related-item">
                     <div class="product-related-item-block-img">
-                    <a href="product.php?id=<?php echo $result_related['product_id'] ?>"><img src="../admin/uploads/<?php echo $result_related['product_img'] ?>"></a>
+                    <a href="product.php?id=<?php echo $result_related['product_id'] ?>"><img src="./admin/uploads/<?php echo $result_related['product_img'] ?>"></a>
                     </div>
                     <a href="product.php?id=<?php echo $result_related['product_id'] ?>"><h1><?php echo $result_related['product_name'] ?></h1></a>
                     <i><?php echo number_format($result_related['product_price'],0,',','.') ?><sup>đ</sup></i><p><?php echo number_format($result_related['product_sale'],0,',','.') ?><sup>đ</sup></p>

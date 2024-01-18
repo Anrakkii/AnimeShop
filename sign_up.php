@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    include("../admin/config.php");
+    include("./admin/config.php");
 ?>
 
 <?php

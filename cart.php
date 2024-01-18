@@ -58,7 +58,7 @@
                         
                     ?>
                     <tr>
-                        <td><img src="../admin/uploads/<?php echo $cart_item['product_img']?>"></td>
+                        <td><img src="./admin/uploads/<?php echo $cart_item['product_img']?>"></td>
                         <td><p><?php echo $cart_item['product_name']?></p></td>
                         <td><p><?php echo $cart_item['brand_name']?></p></td>
                         <td><p><?php echo number_format($cart_item['product_sale'],0,',','.')?></p></td>

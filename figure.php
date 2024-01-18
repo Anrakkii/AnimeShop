@@ -77,7 +77,7 @@
 #loading
 {
  text-align:center; 
- background: url('../assets/images/Visa.webp') no-repeat center; 
+ background: url('./assets/images/Visa.webp') no-repeat center; 
  height: 150px;
 }
 </style>

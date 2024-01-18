@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    include("../admin/config.php");
+    include("./admin/config.php");
 ?>
 <style>
     .thankyou{
@@ -24,7 +24,7 @@
 </style>
 
 <div class="thankyou">
-    <img src="../assets/images/thankyou.gif">
+    <img src="./assets/images/thankyou.gif">
 </div>
 
 <div class="thankyou">

@@ -1,5 +1,5 @@
 <?php 
-    include "../admin/database.php";
+    include "./admin/database.php";
     $district_name = $_GET['district_name'];
 
     // echo $district_id;

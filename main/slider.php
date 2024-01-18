@@ -10,7 +10,7 @@
             while($row_menu = mysqli_fetch_array($query_menu)){
         ?>
 
-            <img src="<?php echo $row_menu['product_img']?>">
+            <a href="product.php?id=<?php echo $row_menu['product_id']?>"><img src="<?php echo './admin/uploads/'.$row_menu['product_img']?>"></a>
         <?php
             }
         ?>

@@ -77,8 +77,12 @@
 #loading
 {
  text-align:center; 
- background: url('../assets/images/Visa.webp') no-repeat center; 
+ background: url('./assets/images/Visa.webp') no-repeat center; 
  height: 150px;
+}
+
+#price_range{
+    z-index: 1;
 }
 </style>
 <script>
@@ -106,7 +110,7 @@ function filter_data()
             $('.category-right-content').html(data);
         }
     });
-}
+} 
 
 function get_filter(class_name)
 {

@@ -10,10 +10,10 @@
 </head>
 <body>
     <?php
-        include("./pages/main/header.php");
-        include("./pages/main/slider.php");
-        include("./pages/main/app_container.php");
-        include("./pages/main/footer.php");
+        include("./main/header.php");
+        include("./main/slider.php");
+        include("./main/app_container.php");
+        include("./main/footer.php");
     ?>
 </body>
 <script src="./style.js"></script>

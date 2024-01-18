@@ -1,5 +1,5 @@
 <?php 
-include "../admin/database.php";
+include "./admin/database.php";
     
     $province_name = $_GET['province_name'];
     

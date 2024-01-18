@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "../admin/database.php";
+include "./admin/database.php";
 //plus product
 if(isset($_GET['add'])){
     $product_id = $_GET['add'];

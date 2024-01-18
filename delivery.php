@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    include("../admin/config.php");
+    include("./admin/config.php");
 ?>
 <?php
     $sql = "SELECT * FROM tbl_customer WHERE customer_id = ".$_SESSION['customer_id']." ";

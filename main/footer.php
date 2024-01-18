@@ -20,5 +20,5 @@
         © 2023 BEST ANIME SHOP. ALL RIGHTS RESERVED.
     </div>
     </body>
-<script src="../style.js"></script>
+<script src="./style.js"></script>
 </html>

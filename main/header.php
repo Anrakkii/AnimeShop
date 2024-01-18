@@ -13,6 +13,12 @@
     if(isset($_GET['log_out']) && $_GET['log_out']==1){
         unset($_SESSION['sign_up']);
     }
+    // session_start();
+
+    // $helper = array_keys($_SESSION);
+    // foreach ($helper as $key){
+    //     unset($_SESSION[$key]);
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,13 +31,13 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://kit.fontawesome.com/00e90bdb6c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Project</title>
 </head>
 <body>
 <header>
         <div class="logo">
-            <a href="index.php"><img src="../assets/images/logo.jpg"></a>
+            <a href="./index.php"><img src="./assets/images/logo.jpg"></a>
         </div>
         <div class="menu">
             <?php

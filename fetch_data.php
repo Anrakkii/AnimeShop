@@ -1,5 +1,5 @@
 <?php
-    include("../admin/config.php");
+    include("./admin/config.php");
 ?>
 
 <?php
@@ -48,7 +48,7 @@ if(isset($_POST["action"])){
             $output .= 
             '<div class="category-right-content-item">
                 <div class= "category-right-content-item-img">
-                    <a href="product.php?id='.$row['product_id'].'"><img src="../admin/uploads/'.$row['product_img'].'"></a>
+                    <a href="product.php?id='.$row['product_id'].'"><img src="./admin/uploads/'.$row['product_img'].'"></a>
                 </div>
                 <a href="product.php?id='.$row['product_id'].'"><h1>'.$row['product_name'].'</h1></a>
                 <p>'.number_format($row['product_price'],0,',','.').'<sup>đ</sup></p>
