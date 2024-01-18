@@ -10,8 +10,11 @@
 </head>
 <body>
     <?php
-        include("/xampp/htdocs/Webbanhang/index.html")
+        include("./pages/main/header.php");
+        include("./pages/main/slider.php");
+        include("./pages/main/app_container.php");
+        include("./pages/main/footer.php");
     ?>
 </body>
-<script src="style.js"></script>
+<script src="./style.js"></script>
 </html>

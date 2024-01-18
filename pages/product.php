@@ -47,7 +47,7 @@
             ?>
             </div>
         </div>
-        <form method="POST" action="/webbanhang/pages/addcart.php?id=<?php echo $product_id ?>" enctype="multipart/form-data">
+        <form method="POST" action="./addcart.php?id=<?php echo $product_id ?>" enctype="multipart/form-data">
             <div class="product-content-right">
                 <div class="product-content-right-product-name">
                     <h1><?php $get = $product->get_product($product_id);

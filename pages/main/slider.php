@@ -1,9 +1,19 @@
+<?php
+    $sql_menu = "SELECT * FROM tbl_product ORDER BY RAND() LIMIT 4";
+    $con = mysqli_connect("localhost","root","","webbanhang_demo");
+    $query_menu = mysqli_query($con,$sql_menu);
+?>
+
 <section id="Slider">
         <div class="aspect-ratio-169">
-            <img src="https://edunewsnetwork.files.wordpress.com/2021/07/images-89.jpeg">
-            <img src="../assets/images/slide2.webp">
-            <img src="../assets/images/slide3.webp">
-            <img src="../assets/images/slide4.webp">
+        <?php
+            while($row_menu = mysqli_fetch_array($query_menu)){
+        ?>
+
+            <img src="<?php echo $row_menu['product_img']?>">
+        <?php
+            }
+        ?>
         </div>
         <div class="dot-container">
             <div class="dot active"></div>
