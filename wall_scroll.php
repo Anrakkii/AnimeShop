@@ -1,6 +1,7 @@
 <?php
     include("./main/header.php");
     $con = mysqli_connect("localhost","demouser_animeshop","animeshop", "demouser_animeshop");
+    mysqli_set_charset($con, 'UTF8');
 ?>
 <?php
     $sql_product = "SELECT * FROM tbl_product_img_desc 
