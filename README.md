@@ -1,4 +1,6 @@
 # this is AnimeShop project
+- Link website [Anime Shop
+](http://animeshop.makuss.click/).
 
 ## Các cài đặt cần thiết để khởi chạy AnimeShop Project
 - Cài đặt PHP phiên bản 8.0 trở lên để tránh xảy ra lỗi.
