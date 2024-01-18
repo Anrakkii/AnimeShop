@@ -1,6 +1,6 @@
 <?php
     $sql_menu = "SELECT * FROM tbl_category ORDER BY category_id DESC";
-    $con = mysqli_connect("localhost","root","","webbanhang_demo");
+    $con = mysqli_connect("localhost","root","","demouser_animeshop");
     $query_menu = mysqli_query($con,$sql_menu);
     $string_temp = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']);
     $string_name = str_replace(".php","",$string_temp);

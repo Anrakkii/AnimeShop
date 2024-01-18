@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    $con = mysqli_connect("localhost","root","","webbanhang_demo");
+    $con = mysqli_connect("localhost","root","","demouser_animeshop");
 ?>
 <?php
     if(isset($_SESSION['cart'])){

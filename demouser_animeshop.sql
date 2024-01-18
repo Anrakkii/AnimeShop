@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 17, 2024 lúc 04:48 PM
+-- Thời gian đã tạo: Th1 18, 2024 lúc 10:12 AM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `webbanhang_demo`
+-- Cơ sở dữ liệu: `demouser_animeshop`
 --
 
 -- --------------------------------------------------------
@@ -87,7 +87,8 @@ CREATE TABLE `tbl_cart` (
 INSERT INTO `tbl_cart` (`cart_id`, `customer_id`, `cart_code`, `cart_status`, `cart_pay_temp`, `cart_ship_fee`, `cart_pay_all`) VALUES
 (21, 8, 97056, 1, 21000, 50000, 73100),
 (22, 8, 79756, 3, 20000, 50000, 72000),
-(23, 7, 82649, 1, 2900000, 0, 3190000);
+(23, 7, 82649, 1, 2900000, 0, 3190000),
+(24, 7, 72304, 1, 880000, 0, 968000);
 
 -- --------------------------------------------------------
 
@@ -112,7 +113,9 @@ INSERT INTO `tbl_cart_details` (`cart_details_id`, `cart_code`, `product_id`, `q
 (16, 97056, 141, 5, 1),
 (17, 79756, 141, 4, 0),
 (18, 79756, 140, 4, 0),
-(19, 82649, 143, 1, 0);
+(19, 82649, 143, 1, 0),
+(20, 72304, 147, 1, 0),
+(21, 72304, 144, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -162,7 +165,7 @@ INSERT INTO `tbl_customer` (`customer_id`, `customer_name`, `customer_email`, `c
 (1, 'Pham An', 'aLoveanime9x@yahoo.com.vn', '61/1B, Đường 379, Phường Tăng Nhơn Phú A', '12345', '0963963073', ''),
 (2, 'Pham An', 'aLoveanime9x@yahoo.com.vn', '61/1B, Đường 379, Phường Tăng Nhơn Phú A', '12345', '0963963073', ''),
 (3, 'An', 'aLoveanime9x@gmail.com', 'Đường 379, Phường Tăng Nhơn Phú A', '12345', '0963963073', ''),
-(7, '123321', '123321', '123321, Phường Phúc Xá, Quận Ba Đình', '123', '123321', 'Hà Nội'),
+(7, '123321', '123321', '31, Phường Phúc Xá, Quận Ba Đình', '321', '123321', 'Hà Nội'),
 (8, 'Ans', '4321s', 'ss, Phường Ngọc Hà, Thành phố Hà Giang', '112233', '4321s', 'Hà Giang'),
 (9, 'An_after', '12345_after', 'after, Phường Dịch Vọng, Quận Cầu Giấy', '54321', '12345_after', 'Hà Nội');
 
@@ -23302,13 +23305,13 @@ ALTER TABLE `tbl_brand`
 -- AUTO_INCREMENT cho bảng `tbl_cart`
 --
 ALTER TABLE `tbl_cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_cart_details`
 --
 ALTER TABLE `tbl_cart_details`
-  MODIFY `cart_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `cart_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_category`
