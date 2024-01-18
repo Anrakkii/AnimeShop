@@ -1,6 +1,7 @@
 <?php
     $sql_menu = "SELECT * FROM tbl_product ORDER BY RAND() LIMIT 4";
-    $con = mysqli_connect("localhost","root","","demouser_animeshop");
+    $con = mysqli_connect("localhost","demouser_animeshop","animeshop", "demouser_animeshop");
+    mysqli_set_charset($con, 'UTF8');
     $query_menu = mysqli_query($con,$sql_menu);
 ?>
 
