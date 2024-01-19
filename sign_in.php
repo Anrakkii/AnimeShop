@@ -20,7 +20,7 @@ if(isset($_SESSION['sign_in'])){
             $_SESSION['customer_id'] = $row_data['customer_id'];
             header("location:index.php");
         }else{
-            echo '<p style="color:red">Mật khẩu hoặc email sai, vui lòng nhập lại!</p>';
+            echo '<p style="color:red;padding:200px 5% 5%; margin:0 auto; ">Mật khẩu hoặc email sai, vui lòng nhập lại!</p>';
         }
     }
     

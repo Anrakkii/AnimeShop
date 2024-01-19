@@ -15,19 +15,13 @@
     $query_product = mysqli_query($con,$sql_product);
     $query_link = mysqli_query($con,$sql_link);
     $link_result = mysqli_fetch_array($query_link);
-
-    if(isset($_POST['search'])){
-        $key_word = $_POST['key_word'];
-    }else{
-        $key_word = '';
-    }
 ?>
 <!-----------------------------category------------------------------->
 <section class="category">
     <div class="container">
         <div class="category-top row">
             <a href="index.php">Trang chủ</a> <span>&#10230; </span>
-            <a href="">Từ khóa tìm kiếm: <?php echo $key_word ?></a>
+            <a href="<?php echo $string_name?>.php"><?php echo $link_result['category_name']?></a>
         </div>
     </div>
     <div class="container">
@@ -109,13 +103,10 @@ function filter_data()
     var brand_name = get_filter('brand_name');
     var url=location.href;
     var urlFilename = url.substring(url.lastIndexOf('/')+1);
-    window.key_word = '<?=$_POST['key_word']?>';
     $.ajax({
-        url:"fetch_search_data.php",
+        url:"fetch_data.php",
         method:"POST",
-        data:{action:action, minimum_price:minimum_price, 
-            maximum_price:maximum_price, brand_name:brand_name, 
-            urlFilename:urlFilename, key_word:key_word},
+        data:{action:action, minimum_price:minimum_price, maximum_price:maximum_price, brand_name:brand_name, urlFilename:urlFilename},
         success:function(data){
             $('.category-right-content').html(data);
         }

@@ -1,6 +1,6 @@
 <?php
     include("./main/header.php");
-    $con = mysqli_connect("localhost","demouser_animeshop","animeshop", "demouser_animeshop");
+    $con = mysqli_connect("localhost","root","", "demouser_animeshop");
     mysqli_set_charset($con, 'UTF8');
 ?>
 <?php
@@ -64,12 +64,12 @@
                         <td><p><?php echo $cart_item['brand_name']?></p></td>
                         <td><p><?php echo number_format($cart_item['product_sale'],0,',','.')?></p></td>
                         <td>
-                            <a href="/webbanhang/pages/addcart.php?add=<?php echo $cart_item['product_id'] ?>"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="./addcart.php?add=<?php echo $cart_item['product_id'] ?>"><i class="fa-solid fa-circle-plus"></i></a>
                             <?php echo $cart_item['total'] ?>
-                            <a href="/webbanhang/pages/addcart.php?sub=<?php echo $cart_item['product_id'] ?>"><i class="fa-solid fa-circle-minus"></i></a>
+                            <a href="./addcart.php?sub=<?php echo $cart_item['product_id'] ?>"><i class="fa-solid fa-circle-minus"></i></a>
                         </td>
                         <td><p><?php echo number_format($price_total,0,',','.') ?><sup>đ</sup></p></td>
-                        <td><button><a href="/webbanhang/pages/addcart.php?delete=<?php echo $cart_item['product_id'] ?>">X</a></button></td>
+                        <td><button><a href="./addcart.php?delete=<?php echo $cart_item['product_id'] ?>">X</a></button></td>
                     </tr>
                     <?php
                         }
@@ -86,7 +86,7 @@
                     ?>
                     <tr>
                         <td colspan="7"><p style="float: right;">
-                        <button><a href="/webbanhang/pages/addcart.php?delete_all=1">Xóa tất cả!</a></button></p></td>
+                        <button><a href="./addcart.php?delete_all=1">Xóa tất cả!</a></button></p></td>
                     </tr>
                 </table>
             </div>

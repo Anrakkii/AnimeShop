@@ -12,13 +12,14 @@ class category {
     {
         $this->db = new Database();
     }
-    public function insert_category($category_name) {
+    public function insert_category($category_name, $category_php_name) {
         
-        $query = "INSERT INTO tbl_category(category_name) VALUES('$category_name')";
+        $query = "INSERT INTO tbl_category(category_name, category_php_name) VALUES('$category_name', '$category_php_name')";
         $result = $this->db->insert($query);
         header('Location:cartergorylist.php');
         // return $result;
     }
+
     public function show_category(){
         $query = "SELECT * FROM tbl_category ORDER BY category_id DESC";
         $result = $this->db->select($query);

@@ -50,14 +50,21 @@
         <form method="POST" action="./addcart.php?id=<?php echo $product_id ?>" enctype="multipart/form-data">
             <div class="product-content-right">
                 <div class="product-content-right-product-name">
-                    <h1><?php $get = $product->get_product($product_id);
+                    <h2><?php $get = $product->get_product($product_id);
                         if($get){
                         $get_product = $get->fetch_assoc();
                         echo $get_product['product_name'];
                     }
-                    ?></h1>
+                    ?></h2>
                     <p>MSP: <?php echo $product_id; ?></p>
+
                 </div>
+                <h4><?php $get = $product->get_product($product_id);
+                        if($get){
+                        $get_product = $get->fetch_assoc();
+                        echo $get_product['product_desc'];
+                    }
+                    ?></h4>
                 <div class="product-content-right-product-price">
                     <p><?php echo number_format($get_product['product_price'],0,',','.'); ?><sup>đ</sup></p>
                 </div>
